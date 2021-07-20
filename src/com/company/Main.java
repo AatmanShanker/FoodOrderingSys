@@ -10,5 +10,6 @@ public class Main {
 
         order.takeUserName();
         order.loopThroughFood();
+
     }
 }

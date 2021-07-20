@@ -7,12 +7,13 @@ public class Food extends Order{
     //Making a Scanner obj for subclasses
     Scanner scanFoodInp = new Scanner(System.in);
 
-    protected float burgerPrice = 4.99f;
-    protected float pizzaPrice = 9.99f;
+    protected int burgerPrice = 5;
+    protected int pizzaPrice = 10;
 
     int numberOfFoodOrdered = 0;
 
     public void TakeFoodType(){
+
         Burger burger = new Burger();
         Pizza pizza = new Pizza();
 

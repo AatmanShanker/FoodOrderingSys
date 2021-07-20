@@ -3,6 +3,7 @@ package OrderFood;
 import java.util.Scanner;
 
 public class Order {
+    //Making the Scanner Object here (Global Var)
     Scanner scanInp = new Scanner(System.in);
 
     public void takeUserName(){
@@ -16,6 +17,7 @@ public class Order {
 
     }
     public void loopThroughFood(){
+
         //Making a food Object
         Food food = new Food();
         Drinks drink = new Drinks();
@@ -28,6 +30,5 @@ public class Order {
         }else if(userDemand.equals("Drinks") || userDemand.equals("drinks")){
             drink.TakeDrinkType();
         }
-
     }
 }

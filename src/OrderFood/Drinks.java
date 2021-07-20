@@ -14,6 +14,7 @@ public class Drinks extends Order{
     int numberOfDrinksOrdered = 0;
 
     public void TakeDrinkType(){
+
         Juices juice = new Juices();
         Alcohol alcohol = new Alcohol();
 
@@ -21,6 +22,8 @@ public class Drinks extends Order{
         String userFoodInp = scanDrinkInp.nextLine();
 
         while(!userFoodInp.equals("C")){
+
+            //Conditional statements for User's input
 
             if(userFoodInp.equals("Juice") || userFoodInp.equals("juice")){
                 juice.juiceInp();
