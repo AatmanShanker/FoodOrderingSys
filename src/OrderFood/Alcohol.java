@@ -13,7 +13,7 @@ public class Alcohol extends Drinks{
         }
 
         //Make userinp for alcohol types
-        System.out.print("Enter from above or press \"F\" for final order or press \"C\" to cancel:");
+        System.out.print("Enter from above or press \"F\" for final order or press \"M\" to get to the main menu or press \"C\" to cancel:");
         String alcoholInp = scanDrinkInp.nextLine();
 
         //Make a while loop and a conditional statement for user input
@@ -23,7 +23,7 @@ public class Alcohol extends Drinks{
 
             if(alcoholInp.equals(alcoholTypes[0])){
 
-                System.out.println("Here is yoru KingFisher! Price:" + alcoholPrice);
+                System.out.println("Here is yoru KingFisher! Price:" + alcoholPrice + "$");
                 numberOfDrinksOrdered += 1;
 
                 System.out.println("You want to order again?");
@@ -37,7 +37,7 @@ public class Alcohol extends Drinks{
                 break;
             }else if(alcoholInp.equals(alcoholTypes[1])){
 
-                System.out.println("Here is yoru RedWine! Price:" + alcoholPrice);
+                System.out.println("Here is yoru RedWine! Price:" + alcoholPrice + "$");
                 numberOfDrinksOrdered += 1;
 
                 System.out.println("You want to order again?");
@@ -51,7 +51,7 @@ public class Alcohol extends Drinks{
                 break;
             }else if(alcoholInp.equals(alcoholTypes[2])){
 
-                System.out.println("Here is yoru KingFisher! Price:" + alcoholPrice);
+                System.out.println("Here is yoru KingFisher! Price:" + alcoholPrice + "$");
                 numberOfDrinksOrdered += 1;
 
                 System.out.println("You want to order again?");

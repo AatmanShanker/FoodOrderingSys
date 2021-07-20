@@ -13,7 +13,7 @@ public class Burger extends Food{
         }
 
         //Making a userinput for burger types
-        System.out.print("Enter one from these or \"F\" for final order or \"C\" to cancel order:");
+        System.out.print("Enter one from these or \"F\" for final order or press \"M\" to get to the main menu or press\"C\" to cancel order:");
         String burgerInp = scanFoodInp.nextLine();
 
         //Make a while loop and then a conditional statement for user input
@@ -23,7 +23,7 @@ public class Burger extends Food{
 
             if(burgerInp.equals(burgerTypes[0])){
 
-                System.out.println("Here is your Cheese burger! Price:" + burgerPrice);
+                System.out.println("Here is your Cheese burger! Price:" + burgerPrice + "$");
                 numberOfFoodOrdered += 1;
 
                 System.out.println("You want to order again?");
@@ -37,7 +37,7 @@ public class Burger extends Food{
                 break;
             }else if(burgerInp.equals(burgerTypes[1])){
 
-                System.out.println("Here is your Veg burger! Price:" + burgerPrice);
+                System.out.println("Here is your Veg burger! Price:" + burgerPrice + "$");
                 numberOfFoodOrdered += 1;
 
                 System.out.println("You want to order again?");
@@ -51,7 +51,7 @@ public class Burger extends Food{
                 break;
             }else if(burgerInp.equals(burgerTypes[2])){
 
-                System.out.println("Here is your Non-Veg burger! Price:" + burgerPrice);
+                System.out.println("Here is your Non-Veg burger! Price:" + burgerPrice + "$");
                 numberOfFoodOrdered += 1;
 
                 System.out.println("You want to order again?");
@@ -65,7 +65,7 @@ public class Burger extends Food{
                 break;
             }else if(burgerInp.equals(burgerTypes[3])){
 
-                System.out.println("Here is your Mega burger! Price:" + burgerPrice);
+                System.out.println("Here is your Mega burger! Price:" + burgerPrice + "$");
                 numberOfFoodOrdered += 1;
 
                 System.out.println("You want to order again?");

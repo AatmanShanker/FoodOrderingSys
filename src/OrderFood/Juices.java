@@ -13,7 +13,7 @@ public class Juices extends Drinks{
         }
 
         //Making input for juice types
-        System.out.print("Enter from these or \"F\" for final order or press \"M\" to get to the main menu press \"C\" to cancel:");
+        System.out.print("Enter from these or \"F\" for final order or press \"M\" to get to the main menu or press \"C\" to cancel:");
         String juiceInp = scanDrinkInp.nextLine();
 
         //While loop and a Conditional Statement for input

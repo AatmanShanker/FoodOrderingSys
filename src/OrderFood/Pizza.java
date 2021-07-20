@@ -13,8 +13,8 @@ public class Pizza extends Food{
         }
 
         //Make a user input for pizza types
+        System.out.print("Enter from above or \"F\" for final order or press \"M\" to get to the main menu or press \"C\" to cancel:");
         String pizzInp = scanFoodInp.nextLine();
-        System.out.print("Enter from above or \"F\" for final order or press \"C\" to cancel:");
 
         //Make a while loop then a conditional statement
         while(true){
@@ -22,6 +22,7 @@ public class Pizza extends Food{
             //Conditional Statements
 
             if(pizzInp.equals(pizzaTypes[0])){
+
                 System.out.println("Here is your Cheese Pizza! Price:" + pizzaPrice + "$");
                 numberOfFoodOrdered += 1;
 
@@ -35,11 +36,13 @@ public class Pizza extends Food{
                 }
                 break;
             }else if(pizzInp.equals(pizzaTypes[1])){
+
                 System.out.println("Here is your Veg Pizza! Price:"+ pizzaPrice + "$");
                 numberOfFoodOrdered += 1;
 
                 System.out.println("You want to order again?");
                 String userInp1 = scanFoodInp.nextLine();
+
                 if(userInp1.equals("Yes") || userInp1.equals("yes")){
                     pizzaInp();
                 }else if(userInp1.equals("No")) {
@@ -47,10 +50,13 @@ public class Pizza extends Food{
                 }
                 break;
             }else if(pizzInp.equals(pizzaTypes[2])){
+
                 System.out.println("Here is your Non-Veg Pizza! Price:" + pizzaPrice + "$");
                 numberOfFoodOrdered += 1;
+
                 System.out.println("You want to order again?");
                 String userInp2 = scanFoodInp.nextLine();
+
                 if(userInp2.equals("Yes") || userInp2.equals("yes")){
                     pizzaInp();
                 }else if(userInp2.equals("No")) {
@@ -58,10 +64,13 @@ public class Pizza extends Food{
                 }
                 break;
             }else if(pizzInp.equals(pizzaTypes[3])){
+
                 System.out.println("Here is your Marghrita Pizza! Price:" + pizzaPrice + "$");
                 numberOfFoodOrdered += 1;
+
                 System.out.println("You want to order again?");
                 String userInp3 = scanFoodInp.nextLine();
+
                 if(userInp3.equals("Yes") || userInp3.equals("yes")){
                     pizzaInp();
                 }else if(userInp3.equals("No")) {
